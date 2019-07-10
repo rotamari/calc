@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+<!-- Add randomize button location -->
+    <div class="container">
+        <div id="calculator" class="calculator">
+            
+            <div id="screen">
+                <h3 id="result">0</h3>
+            </div>
+            
+            <div id="buttons">
+                <div id="numButtons">
+                    <table>
+                        <tr class="calcRow">
+                            <td><button class="numButton">7</button></td>
+                            <td><button class="numButton">8</button></td>
+                            <td><button class="numButton">9</button></td>
+                            <td><button class="funcButton mathButton">+</button></td>
+                        </tr>    
+                        <tr class="calcRow">
+                            <td><button class="numButton">4</button></td>
+                            <td><button class="numButton">5</button></td>
+                            <td><button class="numButton">6</button></td>
+                            <td><button class="funcButton mathButton">-</button></td>
+
+                        </tr>    
+                        <tr class="calcRow">
+                            <td><button class="numButton">1</button></td>
+                            <td><button class="numButton">2</button></td>
+                            <td><button class="numButton">3</button></td>
+                            <td><button class="funcButton mathButton">*</button></td>
+
+                        </tr>    
+                        <tr class="calcRow">
+                            <td colspan="2"><button id="zero" class="numButton">0</button></td>
+                            <td><button id="reset">C</button></td>
+                            <td><button class="funcButton mathButton">/</button></td>
+                        </tr>
+                        <tr class="calcRow">
+                            <td colspan="4"><button class="funcButton equals">=</button></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!-- <div id="funcButtons">
+                    <td><button class="funcButton equals">=</button></td>
+                </div> -->
+
+
+            </div>    
+        </div>
+    </div>
+    <script type="text/javascript" src="calcscript.js"></script>
+</body>
+</html>
+

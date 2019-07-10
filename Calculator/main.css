@@ -1,0 +1,126 @@
+body{
+    /* background-color: rgb(250, 250, 239); */
+    
+    background-color: rgba(238, 238, 238, 0.75) !important;
+    background: url("crissy-jarvis-1316073-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color;
+}
+
+.container{
+    background: #1F1C2C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(100, 97, 117), #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(100, 97, 117), #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    width: 15%;
+    margin: 130px auto;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1024px){
+    .numButtons {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd
+    }
+    .container{
+        width: 20%;
+    }
+}
+@media screen and (max-width: 767px){
+    .numButtons {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd
+    }
+    .container{
+        width: 30%;
+    }
+    button{
+        padding: 0;
+    }
+}
+
+.numButtons {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+.calculator{
+    background: #1F1C2C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(100, 97, 117), #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(100, 97, 117), #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 360px;
+    padding: 10px;
+    border-radius: 5%;
+    border: 2px solid rgb(255, 166, 0);
+    box-sizing: border-box;
+}
+
+#numButtons{
+    height: 100%;
+    box-sizing: content-box;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}
+
+#buttons{
+    width: 100%;
+    height: 80%;
+}
+
+.selected{
+    background-color: orange;
+}
+
+#screen{
+    height: 20%;
+    text-align: right;
+    border: 1px solid black;
+    box-sizing: margin-box;
+    margin: 1px 1px 5px 1px;
+    border-radius: 7%;
+    background-color: aliceblue;
+    /* line-height: 3em; */
+}
+
+#result{
+    height: 100%;
+    font-size: 48px;
+    padding-top: 9px;
+    margin: 0;
+}
+
+.numButton,
+.funcButton,
+#reset {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+button{
+    border-radius: 15%;
+}
+
+td[colspan="4"] button{
+    border-radius: 5%;
+}
+
+td[colspan="2"] button{
+    border-radius: 10%;
+}
+
+button:focus {
+    outline: 0;
+}
